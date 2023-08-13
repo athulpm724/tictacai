@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+
+
+.opening{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -10px;
+    margin-left: -8px;
+
+
+}
+
+.opening h1{
+    font-family: 'Tilt Prism';
+    font-size: 100px;
+    color: white;
+    letter-spacing: 20px;
+}
+
+.opening button{
+    font-family: 'Roboto';
+    background-color: transparent;
+    border: none;
+    min-width: 300px;
+    min-height: 150px;
+    font-size: 20px;
+    color: white;
+    transition: 0.1s ease-in;
+    animation: bounce ease-in-out infinite;
+}
+
+
+
+body{
+    background-color: #85E6C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:20px;
+}
+
+.box{
+    min-height: 120px;
+    min-width: 120px;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+i{
+    transform: scale(2);
+}
+
+.box:hover{
+    cursor: pointer;
+    
+}
